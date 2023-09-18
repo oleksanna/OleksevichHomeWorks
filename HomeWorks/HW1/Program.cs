@@ -64,11 +64,14 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-System.Console.WriteLine("Введите число N: ");
+System.Console.Write("Введите число N: ");
 int numN = Convert.ToInt32(System.Console.ReadLine());
-int i = 1;
+System.Console.Write($"{numN} -> ");
 
-while(i <= numN)
+for(int num = 1; num <= numN; num++)
 {
-    System.Console.WriteLine(i++);
+    if(num%2 == 0)
+    {
+        System.Console.Write($"{num} ");
+    }
 }
