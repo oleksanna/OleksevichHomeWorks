@@ -6,6 +6,25 @@
 // 16, 4  -> кратно
 
 
+// void CheckMultiplicity(int num1, int num2)
+// {
+    // if(num1 % num2 == 0)
+    // {
+        // System.Console.WriteLine($"{num1}, {num2} -> кратно");
+    // }
+    // else
+    // {
+        // System.Console.WriteLine($"{num1}, {num2} -> не кратно");
+    // }
+// }
+// System.Console.WriteLine("Input first number: ");
+// int n1 = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input second number: ");
+// int n2 = Convert.ToInt32(Console.ReadLine());
+
+// CheckMultiplicity(n1, n2);
+
+
 
 
 
@@ -19,6 +38,23 @@
 // 85 -> 8
 
 
+// int BiggestDigit(int num)
+// {
+    // int ed = num % 10;
+    // int dec = num / 10;
+    // if(ed > dec)
+    // {
+        // return ed;
+    // }
+    // else
+    // {
+        // return dec;
+    // }
+// }
+
+// int num = new Random().Next(10, 99+1);
+// System.Console.WriteLine(num);
+// System.Console.WriteLine(BiggestDigit(num));
 
 
 
@@ -33,6 +69,18 @@
 // 918 -> 98
 
 
+// void ExampleMethod(int num)
+// {
+    // int hund = num / 100;
+    // int ed = num % 10;
+    // System.Console.WriteLine($"{num} -> {hund * 10 + ed}");
+// }
+
+// int num = new Random().Next(100, 1000);
+// ExampleMethod(num);
+
+
+
 
 
 // Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
@@ -42,17 +90,17 @@
 // 161 ->  да
 
 
-bool CheckMultiplicity(int num)
-{
-    if(num % 7 == 0 && num % 23 == 0)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-Console.WriteLine("Input number: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($" {num1} -> {CheckMultiplicity(num1)}");
+// bool CheckMultiplicity(int num)
+// {
+    // if(num % 7 == 0 && num % 23 == 0)
+    // {
+        // return true;
+    // }
+    // else
+    // {
+        // return false;
+    // }
+// }
+// Console.WriteLine("Input number: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($" {num1} -> {CheckMultiplicity(num1)}");
