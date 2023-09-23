@@ -60,28 +60,28 @@
 
 // Лучше так ...
 
-System.Console.Write("Input number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int num1 = Convert.ToInt32(Console.ReadLine());
-void treeDigit (int num)
-{
-while (num > 999)
-{
-   num = num / 10; 
-}
-num = num1;
+// System.Console.Write("Input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// treeDigit(num);
+// void treeDigit (int num)
+// {
+     // System.Console.Write($"{num}");
+// while (num > 999)
+// {
+   // num = num / 10;
+// }
+// if(num >= 100 && num < 1000)
+// {
+    // int ed = num % 10;
+    // System.Console.Write($"-> {ed}");
+// }
+// else
+// {
+    // System.Console.WriteLine($" -> третьей цифры нет");
+// }
+// }
 
-if(num1 >= 100 && num1 < 1000)
-{
-    int ed = num1 % 10;
-    System.Console.WriteLine($"Three digit of {num} -> {ed}");
-}
-else
-{
-    System.Console.WriteLine($"Second digit of {num} -> третьей цифры нет");
-}
-}
-treeDigit(num);
+
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -90,7 +90,7 @@ treeDigit(num);
 // 1 -> нет
 
 
-// System.Console.Write("Input number: ");
+// System.Console.Write("Введите номер дня недели : ");
 // int num = Convert.ToInt32(Console.ReadLine());
 
 // if(num > 0 && num < 8)
@@ -108,3 +108,30 @@ treeDigit(num);
 // {
     // System.Console.WriteLine($"{num} -> Нет такого дня недели");
 // }
+
+// Лучше так ...
+
+System.Console.Write("Введите номер дня недели : ");
+int num = Convert.ToInt32(Console.ReadLine());
+weekDay(num);
+
+void weekDay(int num)
+{
+if(num > 0 && num < 8)
+{
+    if(num > 5)
+    {
+        System.Console.WriteLine($"{num} -> Выходной! ");
+    }
+    else
+    {
+        System.Console.WriteLine($"{num} -> Рабочий день");
+    }
+}
+
+else
+{
+    System.Console.WriteLine($"{num} -> Нет такого дня недели");
+}
+}
+
