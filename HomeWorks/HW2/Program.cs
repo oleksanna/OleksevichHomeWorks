@@ -17,8 +17,24 @@
    // System.Console.WriteLine("You input not tree-digit number"); 
 // }
 
+// Лучше так...
 
-
+// System.Console.WriteLine("Input three-digit number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// void secondDigit(int num)
+// {
+// if(num >= 100 && num < 1000)
+// {
+    // int dec = num / 10;
+    // int sec = dec % 10;
+    // System.Console.WriteLine($"Second digit of {num} -> {sec}");
+// }
+// else
+// {
+   // System.Console.WriteLine("You input not tree-digit number"); 
+// }
+// }
+// secondDigit(num);
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 // 645 -> 5
@@ -42,8 +58,30 @@
     // System.Console.WriteLine($"Second digit of {num} -> третьей цифры нет");
 // }
 
+// Лучше так ...
 
+System.Console.Write("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
+void treeDigit (int num)
+{
+while (num > 999)
+{
+   num = num / 10; 
+}
+num = num1;
 
+if(num1 >= 100 && num1 < 1000)
+{
+    int ed = num1 % 10;
+    System.Console.WriteLine($"Three digit of {num} -> {ed}");
+}
+else
+{
+    System.Console.WriteLine($"Second digit of {num} -> третьей цифры нет");
+}
+}
+treeDigit(num);
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -52,21 +90,21 @@
 // 1 -> нет
 
 
-System.Console.Write("Input number: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-if(num > 0 && num < 8)
-{
-    if(num > 5)
-    {
-        System.Console.WriteLine($"{num} -> Да ");
-    }
-    else
-    {
-        System.Console.WriteLine($"{num} -> Нет");
-    }
-}
-else
-{
-    System.Console.WriteLine($"{num} -> Нет такого дня недели");
-}
+// if(num > 0 && num < 8)
+// {
+    // if(num > 5)
+    // {
+        // System.Console.WriteLine($"{num} -> Да ");
+    // }
+    // else
+    // {
+        // System.Console.WriteLine($"{num} -> Нет");
+    // }
+// }
+// else
+// {
+    // System.Console.WriteLine($"{num} -> Нет такого дня недели");
+// }
