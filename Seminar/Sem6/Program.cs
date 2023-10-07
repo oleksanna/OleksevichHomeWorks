@@ -63,8 +63,20 @@
 // 2 -> 10
 
 
+string DecimalToBionary(int num)
+{
+    string result = string.Empty;
+    while(num > 0)
+    {
+        result = num % 2 + result;
+        num /= 2;
+    }
+    return result;
+}
 
-
+System.Console.Write("Inpur number : ");
+int num = Convert.ToInt32(Console.ReadLine());
+System.Console.Write(DecimalToBionary(num));
 
 
 // --------------------------------------------------------------------------
