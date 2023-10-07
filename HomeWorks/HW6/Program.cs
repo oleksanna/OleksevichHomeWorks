@@ -3,32 +3,32 @@
 // 1, -7, 567, 89, 223-> 3
 
 
-// int countPositive(int[] array)
-// {
-//   int count = 0;
-//   for (int i = 0; i < array.Length; i++)
-//   {
-//     if (array[i] > 0)
-//       count++;
-//   }
-//   return count;
-// }
+int countPositive(int[] array)
+{
+  int count = 0;
+  for (int i = 0; i < array.Length; i++)
+  {
+    if (array[i] > 0)
+      count++;
+  }
+  return count;
+}
 
-// int[] inputInt(int M)
-// {
-//   int[] array = new int[M];
-//   for (int i = 0; i < M; i++)
-//   {
-//     Console.Write("Введите целое число: ");
-//     array[i] = int.Parse(Console.ReadLine());
-//   }
-//   return array;
-// }
+int[] inputInt(int M)
+{
+  int[] array = new int[M];
+  for (int i = 0; i < M; i++)
+  {
+    Console.Write("Введите целое число: ");
+    array[i] = int.Parse(Console.ReadLine());
+  }
+  return array;
+}
 
-// Console.Write("Введите кол-во целых чисел: ");
-// int M = int.Parse(Console.ReadLine());
-// int[] array = inputInt(M);
-// Console.Write($"Ввели {countPositive(array)} положительных чисел");
+Console.Write("Введите кол-во целых чисел: ");
+int M = int.Parse(Console.ReadLine());
+int[] array = inputInt(M);
+Console.Write($"Ввели {countPositive(array)} положительных чисел");
 
 
 
@@ -41,47 +41,47 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 
-double X(double k1, double k2, double b1, double b2)
-{
-    return (b2 - b1) / (k1 - k2);
-}
+// double X(double k1, double k2, double b1, double b2)
+// {
+//     return (b2 - b1) / (k1 - k2);
+// }
 
-double Y(double x, double k1, double b1)
-{
-    return k1 * x + b1;
-}
+// double Y(double x, double k1, double b1)
+// {
+//     return k1 * x + b1;
+// }
 
-double inputDouble(string promt)
-{
-    Console.Write(promt);
-    return Convert.ToDouble(Console.ReadLine());
-}
+// double inputDouble(string promt)
+// {
+//     Console.Write(promt);
+//     return Convert.ToDouble(Console.ReadLine());
+// }
 
-bool ValidateLines(double k1, double b1, double k2, double b2)
-{
-    if (k1 == k2)
-    {
-        if (b1 == b2)
-            Console.WriteLine("Прямые совдадают");
-        else
-            Console.WriteLine("Прямые параллельны");
+// bool ValidateLines(double k1, double b1, double k2, double b2)
+// {
+//     if (k1 == k2)
+//     {
+//         if (b1 == b2)
+//             Console.WriteLine("Прямые совдадают");
+//         else
+//             Console.WriteLine("Прямые параллельны");
 
-        return false;
-    }
-    return true;
-}
+//         return false;
+//     }
+//     return true;
+// }
 
-Console.WriteLine("Для уравнений вида y=k*x+b");
-double k1 = inputDouble("Введите к1: ");
-double b1 = inputDouble("Введите b1: ");
-double k2 = inputDouble("Введите к2: ");
-double b2 = inputDouble("Введите b2: ");
-if (ValidateLines(k1, b1, k2, b2))
-{
-    double x = X(k1, k2, b1, b2);
-    double y = Y(x, k1, b1);
-    // Console.WriteLine($"Для уравнений y={k1}*x+{b1} и y={k2}*x+{b2}");
-    // Console.WriteLine($"Общая точка имеет координаты ({x}; {y})");
-    Console.Write($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} ");
-    Console.Write($"-> ({x}; {y})");
-}
+// Console.WriteLine("Для уравнений вида y=k*x+b");
+// double k1 = inputDouble("Введите к1: ");
+// double b1 = inputDouble("Введите b1: ");
+// double k2 = inputDouble("Введите к2: ");
+// double b2 = inputDouble("Введите b2: ");
+// if (ValidateLines(k1, b1, k2, b2))
+// {
+//     double x = X(k1, k2, b1, b2);
+//     double y = Y(x, k1, b1);
+//     // Console.WriteLine($"Для уравнений y={k1}*x+{b1} и y={k2}*x+{b2}");
+//     // Console.WriteLine($"Общая точка имеет координаты ({x}; {y})");
+//     Console.Write($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} ");
+//     Console.Write($"-> ({x}; {y})");
+// }
