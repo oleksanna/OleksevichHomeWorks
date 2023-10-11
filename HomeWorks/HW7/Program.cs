@@ -1,4 +1,4 @@
-﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+﻿// 1. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
 // Внутри класса Answer напишите метод CreateRandomMatrix, который принимал
 // бы числа m и n (размерность массива), а также minLimitRandom и
@@ -103,7 +103,7 @@
 //---------------------------------------------------------------------------------------------
 
 
-// Внутри класса Answer напишите методы CreateIncreasingMatrix, PrintArray, 
+// 2. Внутри класса Answer напишите методы CreateIncreasingMatrix, PrintArray, 
 // FindNumberByPosition и PrintCheckIfError.
 
 // Метод CreateIncreasingMatrix должен создавать матрицу заданной
@@ -348,7 +348,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// Внутри класса Answer напишите методы CreateIncreasingMatrix,
+// 3. Внутри класса Answer напишите методы CreateIncreasingMatrix,
 // PrintArray, PrintListAvr и FindAverageInColumns.
 
 // Метод CreateIncreasingMatrix должен создавать матрицу заданной
