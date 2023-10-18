@@ -3,8 +3,16 @@
     //N = 5 -> "1, 2, 3, 4, 5"
     //N = 6 -> "1, 2, 3, 4, 5, 6"
 
+// void ShowNums(int n)
+// {
+//     if (n > 0)
+//     {
+//         ShowNums(n - 1);
+//         System.Console.Write(n + " ");
+//     }
+// }
 
-
+// ShowNums(5);
 
 
 
@@ -14,6 +22,19 @@
 
 //453 -> 12
 //45 -> 9
+
+
+// int FindSum(int num)
+// {
+//     if (num > 0)
+//     {
+//         return FindSum(num / 10) + num % 10;
+//     }
+//     else return num;
+// }
+
+// System.Console.WriteLine(FindSum(453));
+
 
 
 //-------------------------------------------------------------------------------------
